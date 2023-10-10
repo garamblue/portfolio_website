@@ -77,7 +77,7 @@ body {
 .frame {
   display: flex;
   flex-direction: column;
-  margin: 0 100px;
+  margin: 0 5%;
   /*background-color: var(--color-logo);*/
   background: rgb(2,0,36);
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(3,37,57,1) 50%, rgba(0,212,255,1) 100%);
@@ -481,9 +481,45 @@ a[title="flaticon"]:hover {
 /* media query responsive works & info s*/
 @media screen and (max-width: 950px) {
   /* logo */
-  
+  .logo {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline;
+    font-size: 20px;
+    padding: 0px 10px;
+  }
 
   /* works */
+  .mainText {
+    font-size: 1.5em;
+    left: 15%;
+  }
+
+  @keyframes slideIn {
+    from {
+      left: -150px;
+      opacity: 0;
+    }
+    to {
+      left: 15%;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      left: 15%;
+      opacity: 1;
+    }
+    to {
+      left: -150px;
+      opacity: 0;
+    }
+  }
+
   .recentArticle {
     flex-direction: column;
     justify-content: center;
@@ -492,7 +528,12 @@ a[title="flaticon"]:hover {
 
   .recentImg {
     height: 180px;
+    width: 330px;
     margin-top: 30px;
+  }
+
+  .recentImg:hover {
+    transform: scale(1.1);
   }
 
   /* info */
