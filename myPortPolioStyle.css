@@ -358,6 +358,10 @@ a:hover {
   /*color: var(--color-yellow);*/
 }
 
+.link {
+  text-align: center;
+}
+
 .link>a {
   font-family:'Courier New', Courier, monospace;
   font-size: 2rem;
