@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
     .pause(2000)
     .type("인생은 영원하지 않고 우리의 시간표는 생각보다 짧습니다.")
-    .pause(4000)
-    .delete(31)
+    .pause(3000)
     .go();
 
   new TypeIt('#mainImg2', {
@@ -44,8 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
     .pause(1000)
     .type("나에게 약 30년간의 시간이 주어졌다고 생각하고")
-    .pause(4000)
-    .delete(30)
+    .pause(3000)
     .go();
 
   new TypeIt('#mainImg3', {
@@ -55,22 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
   })  
     .pause(1000)
     .type("풀 스택 개발자로 남은 인생을 열정적으로 살아가기를")
-    .pause(1000)
     .break()
     .type("꿈꿔봅니다 ~ !")
-    .pause(4000)
-    .delete(40)
+    .pause(3000)
     .go();
   
   new TypeIt('#mainImg4', {
     speed: 50,
     waitUntilVisible: true,
+    strings: ["Fighting!!!", "🔥_🔥/"],
     loop: true
   })
     .pause(1000)
-    .type("Fighting!!! 🔥_🔥")
-    .pause(3000)
-    .delete(30)
     .go();
 });
 
