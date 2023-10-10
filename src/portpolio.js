@@ -26,7 +26,7 @@ new TypeIt("#slogan", {
     // go 시작 / String (,)콤마 줄바꿈
 */
 document.addEventListener('DOMContentLoaded', () => {
-  new TypeIt('#mainImg', {
+  new TypeIt('#mainImg1', {
     speed: 50,
     waitUntilVisible: true,
     loop: true
@@ -35,10 +35,24 @@ document.addEventListener('DOMContentLoaded', () => {
     .type("인생은 영원하지 않고 우리의 시간표는 생각보다 짧습니다.")
     .pause(4000)
     .delete(31)
+    .go();
+
+  new TypeIt('#mainImg2', {
+    speed: 50,
+    waitUntilVisible: true,
+    loop: true
+  })
     .pause(1000)
     .type("나에게 약 30년간의 시간이 주어졌다고 생각하고")
     .pause(4000)
     .delete(30)
+    .go();
+
+  new TypeIt('#mainImg3', {
+    speed: 50,
+    waitUntilVisible: true,
+    loop: true
+  })  
     .pause(1000)
     .type("풀 스택 개발자로 남은 인생을 열정적으로 살아가기를")
     .pause(1000)
@@ -46,32 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
     .type("꿈꿔봅니다 ~ !")
     .pause(4000)
     .delete(40)
+    .go();
+  
+  new TypeIt('#mainImg4', {
+    speed: 50,
+    waitUntilVisible: true,
+    loop: true
+  })
     .pause(1000)
-    .type("Fighting!!! (🔥__🔥)/")
+    .type("Fighting!!! 🔥_🔥")
     .pause(3000)
     .delete(30)
     .go();
-  /*
-
-  .type("안녕하세요, TypeIt 예제입니다.")
-.pause(500)
-.break()
-.type("좋은 하루 되세요.")
-.go();
-
-  new TypeIt('#slogan1')
-    .pause(2000)
-    .go();
-  new TypeIt('#slogan2')
-    .pause(3000)
-    .go();
-  new TypeIt('#slogan3')
-    .pause(4000)
-    .go();
-  new TypeIt('#slogan4')
-    .pause(5000)
-    .go();
-  */
 });
 
 /* text sliding */
