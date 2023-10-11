@@ -38,6 +38,7 @@
   --ti-cursor-color: white;
 }
 
+/* common s */
 body {
   height: 100vh;
   width: 100vw;
@@ -182,6 +183,13 @@ a:hover {
   width: 264px;
 }
 
+.menuBtnLink {
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+/* common e */
+
 /* home s*/
 .mainText {
   font-size: 1em;
@@ -223,7 +231,7 @@ a:hover {
   margin-top: 20%;
   font-style: italic;
 }
-/* home e*/
+/* home e */
 
 
 /* works Page s */
@@ -250,7 +258,7 @@ a:hover {
 }
 
 .type1 {
-  color: var(--color-yellow);
+  color: var(--color-white);
   transition: none;
 }
 
@@ -537,19 +545,50 @@ a[title="flaticon"]:hover {
   .logo {
     font-size: 20px;
     padding-left: 0;
+    margin-top: 5px;
   }
 
+  /* menu s */
   li {
     display: inline;
     font-size: 20px;
-    padding: 0px 10px;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
   }
+
+  li:hover {
+    width: 100%;
+  }
+
+  .navi {
+    flex-direction: column;
+  }
+
+  .menuList {
+    display: none;
+  }
+
+  .menuBtnLink {
+    display: block;
+  }
+  
+  .menuBtn {
+    width: 40px;
+  }
+
+  .menuList.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* menu e */
 
   /* media query home s */
   .mainText {
-    font-size: 0.5em;
+    font-size: 0.4em;
     margin-top: -50px;
-    margin-left: -50px;
+    left: 10px;
   }
 
   @keyframes slideIn {
@@ -558,14 +597,14 @@ a[title="flaticon"]:hover {
       opacity: 0;
     }
     to {
-      left: 15%;
+      left: 10px;
       opacity: 1;
     }
   }
   
   @keyframes slideOut {
     from {
-      left: 15%;
+      left: 10px;
       opacity: 1;
     }
     to {
@@ -575,7 +614,7 @@ a[title="flaticon"]:hover {
   }
 
   .mainImg {
-    font-size: 0.5em;
+    font-size: 0.4em;
     padding-top: 30%;
   }
 
