@@ -405,6 +405,7 @@ input {
 #slra5:checked ~ .pagination label:nth-child(5):after {
   opacity: 1;
 }
+
 /* home e */
 
 
