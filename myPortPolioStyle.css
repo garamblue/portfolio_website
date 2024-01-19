@@ -138,8 +138,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 5%;
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(3,37,57,1) 50%, rgba(0,212,255,1) 100%);
+  background: rgb(2,0,36) /**/;
+  /*background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(3,37,57,1) 50%, rgba(0,212,255,1) 100%)*/;
 }
 
 .navi {
@@ -245,6 +245,7 @@ a:hover {
   font-size: 2em;
   margin-top: 20%;
   font-style: italic;
+  font-weight: bolder;
   color: var(--color-logo);
 }
 
