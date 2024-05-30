@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .type("주어졌다고")
     .break()
     .type("생각하고")
-    .pause(3000)
+    .pause(4000)
     .go();
 
   new TypeIt('#mainImg3', {
@@ -47,18 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: false
   })  
     .pause(1000)
-    .type("풀 스택")
+    .type("개발자로")
     .break()
-    .type("웹개발자로")
+    .type("엔지니어로")
     .break()
     .type("남은 인생을")
     .break()
-    .type("열정적으로")
+    .type("늘 배우는 자세로")
     .break()
-    .type("살아가기를")
+    .type("겸손하게 살아가기를")
     .break()
-    .type("꿈꿔봅니다!")
-    .pause(3000)
+    .type("다짐해 봅니다!")
+    .pause(9000)
     .go();
   
   new TypeIt('#mainImg4', {
