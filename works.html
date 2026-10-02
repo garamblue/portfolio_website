@@ -1,210 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Page - works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Works | Jay-hak</title>
+    <meta name="description" content="Jay-hak이 참여한 대표 프로젝트 목록입니다." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Works | Jay-hak" />
+    <meta property="og:description" content="Jay-hak이 참여한 대표 프로젝트 목록입니다." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%2393cfa6'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="myPortPolioStyle.css" />
-    
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Roboto&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-    </style>
-    <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script>
     <script src="src/portpolio.js" defer></script>
   </head>
   <body>
-    <!-- Outline s -->
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-    <!-- class="frame" -->
-    <div class="custom-shape-divider-bottom-1696288644 frame">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Jay-hak 홈"><span class="logo-dot" aria-hidden="true"></span>Jay-hak</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기"><span></span><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html" aria-current="page">Works</a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <!-- Logo & Menus s-->
-      <nav class="navi">
-        <a href="index.html" class="aLogo">
-          <h1 class="logo">⭐ Jay-hak ⭐</h1>
-        </a>
-        
-        <ul class="menuList">
-          <li><a class="highlight type1" href="index.html">Home</a></li>
-          <li><a class="highlight type1" href="works.html">Works</a></li>
-          <li><a class="highlight type1" href="info.html">Info</a></li>
-        </ul>
-  
-        <a href="#" class="menuBtnLink">
-          <img class="menuBtn" src="img/ham_white.png"></img>
-        </a>
-      </nav>
-      <!-- Logo & Menus e-->
-
-      <!-- Recent works -->
-      <h5 class="recentTitle">Representative works</h5>
-      
-      <section class="recentWorks">
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/dongback.png" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              BuSan Pay
-            </h4>
-            <p class="valueText">
-              ✔ 부산시 지역화폐를 대표하는 브랜드인 <br/>
-              동백전을 활용한 외국인 전용 동백전 시스템인 부산페이 구축 참여
-              <br/><br/>
-              ✔ 기간: 2024/01 ~ 2024/05
-              <br/><br/>
-              <a class="highlight type1" href="https://busandong100.kr/" target='_blank'>
-                ✔ https://busandong100.kr/
-              </a>
-            </p>
-          </div>
-        </article>
-
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/api02.png" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              GPS Data transfer API site 
-            </h4>
-            <p class="valueText">
-              ✔ GPS 관제시스템에 저장된 데이터를<br/>
-              별도의 API 사이트를 구축하여 데이터를 제공하도록 구현
-              <br/><br/>
-              ✔ 기간: 2021/12 ~ 2022/1
-              <br/><br/>
-              <a class="highlight type1" href="http://iotplex-dt.com:8099" target='_blank'>
-                ✔ http://iotplex-dt.com:8099
-              </a>
-            </p>
-          </div>
-        </article>
-        
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/demo01.png" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              GPS location tracking system
-            </h4>
-            <p class="valueText">
-              ✔ GPS tracker 를 통해 실시간으로 수집된 단말기의 위치를<br/>
-              웹사이트와 모바일앱으로 보여주는 GPS 관제시스템 구축
-              <br/><br/>
-              ✔ 기간: 2020/12 ~ 2022/12
-              <br/><br/>
-              <a class="highlight type1" href="https://iotlbs.com" target='_blank'>
-                ✔ https://iotlbs.com
-              </a>
-            </p>
-          </div>
-        </article>
-
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/demo02.png" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              Hyundai Motor 차세대 SHE system
-            </h4>
-            <p class="valueText">
-              ✔ 현대자동차 차세대 Safety, Health, Environment 시스템 구축
-              <br/><br/>
-              ✔ 기간: 2018/7 ~ 2019/3
-              <br/><br/>
-              <a class="highlight type1" href='https://www.hyundai.com/kr/ko/e' target='_blank'>
-                ✔ 내부업무사이트
-              </a>
-            </p>
-          </div>
-        </article>
-
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/mes.jpg" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              Smart factory MES system
-            </h4>
-            <p class="valueText">
-              ✔ 스마트공장 시스템 구축<br/>
-              - Enterprise Resource Planning<br/>
-              - Manufacturing Execution System
-              <br/><br/>
-              ✔ 기간: 2016/1 ~ 2020/3
-              <br/><br/>
-              <a class="highlight type1" href='#'>
-                ✔ 내부업무사이트
-              </a>
-            </p>
-          </div>
-        </article>
-
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/demo03.png" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              STX Shipbuilding SI & SM
-            </h4>
-            <p class="valueText">
-              ✔ 진해 STX 조선 시스템(KPI, SCM, SHE) 개발 및 유지보수
-              <br/><br/>
-              ✔ 기간: 2015/1 ~ 2015/12
-              <br/><br/>
-              <a class="highlight type1" href='https://www.stx.co.kr/' target='_blank'>
-                ✔ 내부업무사이트
-              </a>
-            </p>
-          </div>
-        </article>
-
-        <article class="recentArticle">
-          <div class="spaceDiv10"></div>
-          <img class="recentImg imgRadius1" src="img/demo04.png" alt="demoImage">
-          <div class="spaceDiv5"></div>
-          <div>
-            <h4 class="valueTitle">
-              중앙장애아동-발달장애인지원센터 homepage
-            </h4>
-            <p class="valueText">
-              ✔ 중앙장애아동-발달장애인지원센터 홈페이지 신규 구축.
-              <br/><br/>
-              ✔ 기간: 2013/5 ~ 2013/9
-              <br/><br/>
-              <a class="highlight type1" href='https://www.broso.or.kr/mainPage.do' target='_blank'>
-                ✔ https://www.broso.or.kr
-              </a>
-            </p>
-          </div>
-        </article>
+    <main id="main">
+      <section class="page-intro container">
+        <h1 class="page-title">Works</h1>
+        <p class="page-lead">공공, 제조, 결제, IoT 분야에서 설계부터 구현까지 맡았던 대표 프로젝트입니다. 최신 순으로 정리했습니다.</p>
       </section>
 
-      <!-- footer -->
-      <footer class="footer">
-        <h1 class="contact">Wanna contact me?</h1>
-        <div class="link">
-          <a href="https://develoj.tistory.com/" target='_blank'>My Blog</a>
-          <p>My e-mail : hemiblues@gmail.com</p>
+      <section class="container" aria-label="프로젝트 목록">
+        <article class="work" id="busanpay">
+          <div class="work-period">
+            <time datetime="2024-01">2024.01</time> – <time datetime="2024-05">2024.05</time><br />
+            <span class="dur">5개월</span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">BuSan Pay</h2>
+            <p class="work-desc">부산시 지역화폐 브랜드 동백전을 활용한 외국인 전용 결제 시스템, 부산페이 구축에 참여했습니다.</p>
+            <ul class="work-tags"><li>결제</li><li>지역화폐</li><li>Java</li><li>Spring</li></ul>
+            <a class="work-link text-link" href="https://busandong100.kr/" target="_blank" rel="noopener">busandong100.kr</a>
+          </div>
+          <figure class="shot work-shot"><img src="img/dongback.png" alt="부산페이(외국인 전용 동백전) 카드 이미지" loading="lazy" /></figure>
+        </article>
+        <article class="work" id="gps-api">
+          <div class="work-period">
+            <time datetime="2021-12">2021.12</time> – <time datetime="2022-01">2022.01</time><br />
+            <span class="dur">2개월</span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">GPS Data transfer API site</h2>
+            <p class="work-desc">GPS 관제시스템에 저장된 데이터를 외부에 제공하기 위해 별도의 API 사이트를 구축했습니다.</p>
+            <ul class="work-tags"><li>REST API</li><li>GPS</li><li>데이터 연계</li></ul>
+            <a class="work-link text-link" href="http://iotplex-dt.com:8099" target="_blank" rel="noopener">iotplex-dt.com:8099</a>
+          </div>
+          <figure class="shot work-shot"><img src="img/api02.png" alt="GPS 데이터 제공 API 사이트 화면" loading="lazy" /></figure>
+        </article>
+        <article class="work" id="gps-tracking">
+          <div class="work-period">
+            <time datetime="2020-12">2020.12</time> – <time datetime="2022-12">2022.12</time><br />
+            <span class="dur">2년 1개월</span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">GPS location tracking system</h2>
+            <p class="work-desc">GPS 트래커로 실시간 수집한 단말기 위치를 웹사이트와 모바일 앱에서 보여주는 관제시스템을 구축했습니다.</p>
+            <ul class="work-tags"><li>IoT</li><li>실시간 위치</li><li>웹</li><li>모바일 앱</li></ul>
+            <a class="work-link text-link" href="https://iotlbs.com" target="_blank" rel="noopener">iotlbs.com</a>
+          </div>
+          <figure class="shot work-shot"><img src="img/demo01.png" alt="GPS 관제시스템 지도 화면" loading="lazy" /></figure>
+        </article>
+        <article class="work" id="hyundai-she">
+          <div class="work-period">
+            <time datetime="2018-07">2018.07</time> – <time datetime="2019-03">2019.03</time><br />
+            <span class="dur">9개월</span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">Hyundai Motor 차세대 SHE system</h2>
+            <p class="work-desc">현대자동차 차세대 Safety, Health, Environment 시스템 구축에 참여했습니다.</p>
+            <ul class="work-tags"><li>안전보건환경</li><li>대기업 SI</li></ul>
+            <span class="work-note">내부 업무 시스템</span>
+          </div>
+          <figure class="shot work-shot"><img src="img/demo02.png" alt="현대자동차 SHE 시스템 화면" loading="lazy" /></figure>
+        </article>
+        <article class="work" id="mes">
+          <div class="work-period">
+            <time datetime="2016-01">2016.01</time> – <time datetime="2020-03">2020.03</time><br />
+            <span class="dur">4년 3개월</span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">Smart factory MES system</h2>
+            <p class="work-desc">ERP(전사적 자원관리)와 MES(생산관리)를 포함한 스마트공장 시스템을 구축했습니다.</p>
+            <ul class="work-tags"><li>MES</li><li>ERP</li><li>스마트팩토리</li></ul>
+            <span class="work-note">내부 업무 시스템</span>
+          </div>
+          <figure class="shot work-shot"><img src="img/mes.jpg" alt="스마트공장 제조 시스템 일러스트" loading="lazy" /></figure>
+        </article>
+        <article class="work" id="stx">
+          <div class="work-period">
+            <time datetime="2015-01">2015.01</time> – <time datetime="2015-12">2015.12</time><br />
+            <span class="dur">1년 </span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">STX Shipbuilding SI & SM</h2>
+            <p class="work-desc">진해 STX 조선의 KPI, SCM, SHE 시스템을 개발하고 유지보수했습니다.</p>
+            <ul class="work-tags"><li>KPI</li><li>SCM</li><li>SHE</li><li>유지보수</li></ul>
+            <span class="work-note">내부 업무 시스템</span>
+          </div>
+          <figure class="shot work-shot"><img src="img/demo03.png" alt="STX 조선 시스템 화면" loading="lazy" /></figure>
+        </article>
+        <article class="work" id="broso">
+          <div class="work-period">
+            <time datetime="2013-05">2013.05</time> – <time datetime="2013-09">2013.09</time><br />
+            <span class="dur">5개월</span>
+          </div>
+          <div class="work-body">
+            <h2 class="work-title">중앙장애아동·발달장애인지원센터 홈페이지</h2>
+            <p class="work-desc">중앙장애아동·발달장애인지원센터 홈페이지를 신규 구축했습니다.</p>
+            <ul class="work-tags"><li>공공기관</li><li>홈페이지 구축</li></ul>
+            <a class="work-link text-link" href="https://www.broso.or.kr/mainPage.do" target="_blank" rel="noopener">broso.or.kr</a>
+          </div>
+          <figure class="shot work-shot"><img src="img/demo04.png" alt="중앙장애아동·발달장애인지원센터 홈페이지 화면" loading="lazy" /></figure>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-inner">
+        <h2 class="footer-title">Wanna contact me?</h2>
+        <a class="footer-mail" href="mailto:hemiblues@gmail.com">hemiblues@gmail.com</a>
+        <div class="footer-links">
+          <a href="https://develoj.tistory.com/" target="_blank" rel="noopener">블로그 보기</a>
+          <a href="https://github.com/garamblue" target="_blank" rel="noopener">GitHub 보기</a>
         </div>
-        <p class="footerCmt">
-          Icons made by flaticon<br/>
-          <a href="https://www.flaticon.com/" title="flaticon" target='_blank'>www.flaticon.com</a>
-        </p>
-      </footer>
-
-      <!-- mouse icon s-->
-      <!-- mouse icon e-->
-
-    </div>
-    <!-- Outline e -->
-
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Jay-hak</span>
+          <span>Busan, Korea</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

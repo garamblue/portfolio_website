@@ -1,104 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Page - main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jay-hak | Full-stack developer</title>
+    <meta name="description" content="Jay-hak의 포트폴리오" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Jay-hak | Full-stack developer" />
+    <meta property="og:description" content="Jay-hak의 포트폴리오" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%2393cfa6'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="myPortPolioStyle.css" />
-    
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Roboto&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-    </style>
-    <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script>
     <script src="src/portpolio.js" defer></script>
   </head>
   <body>
-    <!-- Logo & Menus s-->
-    <nav class="navi">
-      <a href="index.html" class="aLogo">
-        <h1 class="logo">⭐ Jay-hak ⭐</h1>
-      </a>
-      
-      <ul class="menuList">
-        <li><a class="highlight type1" href="index.html">Home</a></li>
-        <li><a class="highlight type1" href="works.html">Works</a></li>
-        <li><a class="highlight type1" href="info.html">Info</a></li>
-      </ul>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-      <a href="#" class="menuBtnLink">
-        <img class="menuBtn" src="img/ham_white.png"></img>
-      </a>
-    </nav>
-    <!-- Logo & Menus e-->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Jay-hak 홈"><span class="logo-dot" aria-hidden="true"></span>Jay-hak</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기"><span></span><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- Outline s -->
-    <!-- class="frame" -->
-    <!-- Outline e -->
-
-    <!-- slider s -->
-    <div class="slider" id="slider">
-      <!-- slide -->
-      <h1 class="mainText" id="mainText">
-        Full-stack & Full-passion<br/>
-      </h1>
-      
-      <div class="slide" id="slide-1">
-        <div class="slide-content">
-          <h1 class="mainImg" id="mainImg1"></h1>
+    <main id="main">
+      <section class="hero container">
+        <p class="hero-intro">개발자, Jay-hak입니다.</p>
+        <h1 class="hero-title"><span>Full-stack &amp;</span><span>Full-passion.</span></h1>
+        <div class="motto" data-motto aria-roledescription="carousel" aria-label="좌우명">
+          <div class="motto-stage">
+            <p class="motto-slide is-active" lang="ko"><span class="motto-sizer">인생은 영원하지 않고, 우리의 시간표는 생각보다 짧습니다.</span><span class="motto-typed" aria-hidden="true"></span></p>
+            <p class="motto-slide" lang="ko"><span class="motto-sizer">나에게 약 20년간의 시간이 주어졌다고 생각하고,</span><span class="motto-typed" aria-hidden="true"></span></p>
+            <p class="motto-slide" lang="ko"><span class="motto-sizer">개발자로, 엔지니어로 남은 인생을 늘 배우는 자세로 겸손하게 살아가기를 다짐해 봅니다!</span><span class="motto-typed" aria-hidden="true"></span></p>
+            <p class="motto-slide" lang="en"><span class="motto-sizer">Fighting!!! 🔥_🔥/</span><span class="motto-typed" aria-hidden="true"></span></p>
+            <p class="motto-slide motto-slide--long" lang="en"><span class="motto-sizer">Based in Busan, Korea. However, interested in traveling around the world to find any exciting and challenging works. I'd like to live passionately as a full-stack web developer. Let's build our lives even better than yesterday!</span><span class="motto-typed" aria-hidden="true"></span></p>
+          </div>
+          <p class="sr-only" data-motto-live aria-live="off"></p>
+          <div class="motto-controls">
+            <button class="motto-toggle" type="button" data-motto-toggle aria-label="자동 재생 일시정지">
+              <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+              <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+            </button>
+            <div class="motto-steps" role="group" aria-label="문장 선택">
+              <button class="motto-step" type="button" aria-label="1번째 문장 보기"><span class="motto-step-fill"></span></button>
+              <button class="motto-step" type="button" aria-label="2번째 문장 보기"><span class="motto-step-fill"></span></button>
+              <button class="motto-step" type="button" aria-label="3번째 문장 보기"><span class="motto-step-fill"></span></button>
+              <button class="motto-step" type="button" aria-label="4번째 문장 보기"><span class="motto-step-fill"></span></button>
+              <button class="motto-step" type="button" aria-label="5번째 문장 보기"><span class="motto-step-fill"></span></button>
+            </div>
+            <span class="motto-count" aria-hidden="true"><span data-motto-current>1</span> / 5</span>
+          </div>
         </div>
-        <img src="img/starry_sky1.jpg" alt="main1">
-      </div>
-
-      <div class="slide" id="slide-2">
-        <div class="slide-content">
-          <h1 class="mainImg" id="mainImg2"></h1>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="works.html">작업 보기</a>
+          <a class="btn btn-ghost" href="#contact">연락하기</a>
         </div>
-        <img src="img/aurora1.jpg" alt="main2">
-      </div>
+      </section>
 
-      <div class="slide" id="slide-3">
-        <div class="slide-content">
-          <h1 class="mainImg" id="mainImg3"></h1>
+      <section class="section container" aria-labelledby="tt-title">
+        <div class="section-head">
+          <h2 class="section-title" id="tt-title">나의 시간표</h2>
+          <p class="section-desc">2013년부터 참여한 주요 프로젝트를 기간 순으로 놓았습니다. 항목을 누르면 상세 내용으로 이동합니다.</p>
         </div>
-        <img src="img/tree1.jpg" alt="main3">
-      </div>
 
-      <div class="slide" id="slide-4">
-        <div class="slide-content">
-          <h1 class="mainImg" id="mainImg4"></h1>
+        <div class="tt" data-timetable data-from="2013" data-to="2027">
+          <div class="tt-axis" aria-hidden="true">
+            <span class="tt-axis-label"></span>
+            <span class="tt-axis-track"></span>
+          </div>
+          <div class="tt-rows">
+            <a class="tt-row" href="works.html#broso" data-start="2013-05" data-end="2013-09">
+              <span class="tt-label"><strong>중앙장애아동·발달장애인지원센터 홈페이지</strong><span>2013.05 – 2013.09</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <a class="tt-row" href="works.html#stx" data-start="2015-01" data-end="2015-12">
+              <span class="tt-label"><strong>STX Shipbuilding SI & SM</strong><span>2015.01 – 2015.12</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <a class="tt-row" href="works.html#mes" data-start="2016-01" data-end="2020-03">
+              <span class="tt-label"><strong>Smart factory MES system</strong><span>2016.01 – 2020.03</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <a class="tt-row" href="works.html#hyundai-she" data-start="2018-07" data-end="2019-03">
+              <span class="tt-label"><strong>Hyundai Motor 차세대 SHE system</strong><span>2018.07 – 2019.03</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <a class="tt-row" href="works.html#gps-tracking" data-start="2020-12" data-end="2022-12">
+              <span class="tt-label"><strong>GPS location tracking system</strong><span>2020.12 – 2022.12</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <a class="tt-row" href="works.html#gps-api" data-start="2021-12" data-end="2022-01">
+              <span class="tt-label"><strong>GPS Data transfer API site</strong><span>2021.12 – 2022.01</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <a class="tt-row" href="works.html#busanpay" data-start="2024-01" data-end="2024-05">
+              <span class="tt-label"><strong>BuSan Pay</strong><span>2024.01 – 2024.05</span></span>
+              <span class="tt-track"><span class="tt-bar"></span></span>
+            </a>
+            <div class="tt-overlay" aria-hidden="true">
+              <span></span>
+              <span class="tt-overlay-track"><span class="tt-now"><span class="tt-now-label">지금</span></span></span>
+            </div>
+          </div>
         </div>
-        <picture>
-          <source srcset="img/fire.jpg" media="(max-width: 950px)" />
-          <img src="img/fire_w.jpg" alt="fire" />
-        </picture>
-      </div>
+      </section>
 
-      <div class="slide" id="slide-5">
-        <div class="slide-content">
-          <p class="mainEngText">Based in Busan, Korea.<br/>
-            However, interested in traveling around the world to find any exciting and challenging works.<br/>
-            I'd like to live passionately as a full-stack web developer.<br/>
-            Let's build our lives even better than yesterday!
-          </p>
+      <section class="section container" aria-labelledby="featured-title">
+        <div class="section-head">
+          <h2 class="section-title" id="featured-title">최근 작업</h2>
+          <a class="text-link" href="works.html">전체 작업 보기</a>
         </div>
-        <img src="img/beach1.jpg" alt="main5">
-      </div>
-    </div>
-    <!-- slider e -->
+        <div class="featured-list">
+          <a class="featured-item" href="works.html#busanpay">
+            <figure class="shot"><img src="img/dongback.png" alt="부산페이(외국인 전용 동백전) 카드 이미지" loading="lazy" /></figure>
+            <div>
+              <h3>BuSan Pay</h3>
+              <p>부산시 지역화폐 브랜드 동백전을 활용한 외국인 전용 결제 시스템, 부산페이 구축에 참여했습니다.</p>
+            </div>
+          </a>
+          <a class="featured-item" href="works.html#gps-api">
+            <figure class="shot"><img src="img/api02.png" alt="GPS 데이터 제공 API 사이트 화면" loading="lazy" /></figure>
+            <div>
+              <h3>GPS Data transfer API site</h3>
+              <p>GPS 관제시스템에 저장된 데이터를 외부에 제공하기 위해 별도의 API 사이트를 구축했습니다.</p>
+            </div>
+          </a>
+          <a class="featured-item" href="works.html#gps-tracking">
+            <figure class="shot"><img src="img/demo01.png" alt="GPS 관제시스템 지도 화면" loading="lazy" /></figure>
+            <div>
+              <h3>GPS location tracking system</h3>
+              <p>GPS 트래커로 실시간 수집한 단말기 위치를 웹사이트와 모바일 앱에서 보여주는 관제시스템을 구축했습니다.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
 
-    <!-- footer -->
-    <footer class="footer">
-      <h1 class="contact">Wanna contact me?</h1>
-      <div class="link">
-        <a href="https://develoj.tistory.com/" target='_blank'>My Blog</a>
-        <p>My e-mail : hemiblues@gmail.com</p>
+    <footer class="site-footer" id="contact">
+      <div class="container footer-inner">
+        <h2 class="footer-title">Wanna contact me?</h2>
+        <a class="footer-mail" href="mailto:hemiblues@gmail.com">hemiblues@gmail.com</a>
+        <div class="footer-links">
+          <a href="https://develoj.tistory.com/" target="_blank" rel="noopener">블로그 보기</a>
+          <a href="https://github.com/garamblue" target="_blank" rel="noopener">GitHub 보기</a>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Jay-hak</span>
+          <span>Busan, Korea</span>
+        </div>
       </div>
-      <p class="footerCmt">
-        Icons made by flaticon<br/>
-        <a href="https://www.flaticon.com/" title="flaticon" target='_blank'>www.flaticon.com</a>
-      </p>
     </footer>
-
   </body>
 </html>
